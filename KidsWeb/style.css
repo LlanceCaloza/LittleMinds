@@ -7,51 +7,70 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoko One', sans-serif;
 }
 
-#homepage {
-    background-color:lightblue;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(../KidsWeb/image2/homepage/bghome.png);
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 100%;
-    background-position: top center;
+section {
+    padding: 20px 10%;
     position: relative;
-    background-repeat: no-repeat;
 }
 
-nav {
+.image-bg {
+    position: absolute;
+    top: 0; left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:1;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+}
+
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1000000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header nav {
+    max-width: 650px;
     height: 60px;
     font-family: 'Fredoko One';
-    position: fixed;
-    background-color: rgba(140, 202, 243, 0.418);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
 }
 
-nav p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(31, 8, 114);
-    font-size: 33px;
-    line-height: 55px;
-    float: left;
-    padding: 0px 20px;
-    font-family: 'Fredoka One';
+.header .logo { 
+    padding-top: 30px;
+    color: #000;
+    font-style: 1.4rem;
 }
 
-nav ul {
-    float: left;
-    font-family: 'Roboto Slab';
+.header ul {
+    display: flex;
+    position: relative;
 }
 
-nav ul li {
-    float: left;
+.header nav ul {
+    display: flex;
+    position: relative;
+}
+
+.header nav ul li {
+    display: inline-block;
     list-style: none;
     position: relative;
+    margin: 0 15px;
     font-family: 'Roboto Slab';
 }
 
-nav ul li a {
-    display: blocks;
+.header nav ul li a {
+    display: block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(0, 0, 0);
     font-size: 21px;
@@ -61,57 +80,68 @@ nav ul li a {
     font-family: 'Roboto Slab';
 }
 
-nav ul li ul {
+.header nav ul li ul {
     display: none;
     position: absolute;
     background-color: rgb(197, 249, 253);
     padding: 10px;
     border-radius:  15px 15px 15px 15px;
+    transition: 0.3s ease;
 }
 
-nav ul li:hover ul {
+.header nav ul li:hover ul {
     display: block;
 }
 
-nav ul li ul li {
+.header nav ul li ul li {
     border-radius: 4px;
 }
 
-nav ul li ul li a{
+.header nav ul li ul li a{
     padding: 8px 10px;
     line-height: 35px;
 }
 
-nav ul li ul li a:hover{
+.header nav ul li ul li a:hover{
     background-color: rgb(255, 255, 255);
     border-radius: 15px 15px 15px 15px;
 }
 
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage .description {
+    position: absolute;
+    max-width: 600px;
+    top: 140px;
+    left: 50px;
+}
+
+.homepage .description h2 { 
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.homepage .description p {
+    color: #000;
+    font-size: 0.9em; 
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 700;
+}
+
 .row {
     display: flex;
-    height: 88%;
-    align-items: center;
-    padding: 0 25px;
-    text-align: justify;
+    position: relative;
 }
 
-.column {
-    flex-basis: 50%;
-}
-h1 {
-    color: rgb(37, 13, 122);
-    font-size: 50px;
-    font-family: 'Fredoka One';
-    padding: 0 0 10px;
-}
-
-.column {
-    color: white;
-    font-size: 22px;
-    font-family: 'Judson';
-}
-
-button {
+/* button {
     width: 100px;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -122,26 +152,43 @@ button {
     outline: none;
     margin-top: 30px;
     z-index: -1;
-}
+} */
 
-.object {
-    width: 150px;
-    height: 250px;
-    display: inline-block;
+.container-col {
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    position: relative;
+    right: -300px;
+    top: 50px;
+}
+.container-col .object {
+    width: 160px;
+    position: relative;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 15px;
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-    margin-top: 10px 15px;
+    margin-top: 10px;
     /*background-image: url(../KidsWeb/image2/black.jpg);*/
     background-position: center;
     background-size: cover;
-    transition: transform 0.5s;
+    transition: 0.5s ease-in;
     outline: rgb(109, 214, 221) solid;
 }  
 
+.container-col .object h3 {
+    text-align: center;
+}
+
 .column p {
     color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .object1 {
@@ -192,7 +239,7 @@ button {
     text-align: center;
 }
 .object:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.03);
 }
 
 /*End of Homepage*/

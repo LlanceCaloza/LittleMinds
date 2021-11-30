@@ -11,55 +11,73 @@
 </head>
 <body>
     <!--Start of Home-->
-    <section class="homepage" id="homepage">
-        <div class="navbar">
+     <section class="header">
+            <div class="logo">
+                <h2>LittleMinds</h2>
+            </div>
             <nav>
-                <a href="#">LittleMinds</a>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#">KIDS MENU</a>
-                        <div>
                             <ul>
                                 <li><a href="#alphabetpage">ALPHABET</a></li>
                                 <li><a href="#numberpage">NUMBERS</a></li>
                                 <li><a href="#shapepage">SHAPES</a></li>
                                 <li><a href="#colorpage">COLORS</a></li>
                             </ul>
-                        </div>
                     </li>
                     <li><a href="#aboutpage">ABOUT</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="row">
-            <div class="column">
-                <h1>Start Learning with Us!</h1>
-                <p>A Stepping Stone for your Children to Learn.</p>
-                <p>LittleMinds is an Accessible Tool to Learn Interactively.</p>
+
+    </section>
+    
+    <section class="homepage" id="homepage">
+        <img src="../KidsWeb/image2/homepage/bghomefin.jpg" class="image-bg">
+        <!-- <div class="column">
+            <h1>Start Learning with Us!</h1>
+            <p>A Stepping Stone for your Children to Learn.</p>
+            <p>LittleMinds is an Accessible Tool to Learn Interactively.</p>
                 <p>With Us Make your Childrens World Better !</p>
                 <button type="button">Study Now</button>
-            </div>
+            </div> --> 
+
+        <div class="description">
+            <h2 class="titleText">Start Learning with Us!</h2>
+            <p>A Stepping Stone for your Children to Learn.
+                LittleMinds is an Accessible Tool to Learn Interactively.
+                With Us Make your Childrens World Better !</p>
+        </div>
+        <div class="row">
+            <div class="container-col">
             <div class="column">
                 <div class="object object1">
-                    <a href="#alphabetpage">ALPHABET</a>
+                    <h3><a href="#alphabetpage">ALPHABET</a></h3>
                     <!--<h5>Alphabet</h5>-->
                     <p>Learn the Alphabets now!</p>
                 </div>
-                <div class="object object2">
-                    <a href="#numberpage">NUMBERS</a>
+            </div>
+            <div class="column">
+                    <div class="object object2">
+                    <h3><a href="#numberpage">NUMBERS</a></h3>
                     <!--<h5>Numbers</h5>-->
                     <p>Ready to count some numbers?</p>
                 </div>
+            </div>
+            <div class="column">
                 <div class="object object3">
-                    <a href="#shapepage">SHAPES</a>
+                <h3><a href="#shapepage">SHAPES</a></h3>
                     <!--<h5>Shapes</h5>-->
                     <p>What does the shape say?</p>
                 </div>
+            </div>
+            <div class="column">
                 <div class="object object4">
-                    <a href="#colorpage">COLORS</a>
+                <h3><a href="#colorpage">COLORS</a></h3>
                     <!--<h5>Color</h5>-->
                     <p>See the beauty of colors!</p>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -135,12 +153,7 @@
                 </ul>
             </div>
 
-            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-            <script src="../KidsWeb/hislide/jquery.hislide.js"></script>
             
-            <script>
-               $('.slide').hiSlide(); 
-            </script>
             
 
     </section>
@@ -158,7 +171,14 @@
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script src="../KidsWeb/hislide/jquery.hislide.js"></script>
+            
+            <script>
+               $('.slide').hiSlide(); 
+            </script>
 
+            <script src="hislide/main.js"></script>
 
 </body>
 </html>
