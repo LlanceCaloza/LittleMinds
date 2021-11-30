@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background: url(../try/quizbg.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+img{
+  width: 5.5rem;
+  height: 5.2rem;
+  border-radius: 50%;
+}
+.img{
+  position: fixed;
+}
+#title{
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 3rem;
+  color: orange;
+  background: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.questions{
+  margin: 140px 625px;
+  width: 350px;
+  padding: 2rem;
+  text-align: center;
+  background:white;
+  color: rgb(1, 198, 233);
+  cursor: pointer;
+  border-radius: 2rem;
+}
+#question{
+  margin-bottom: 1rem;
+  
+}
+.option{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.option0{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  text-align: center;
+  background-color: red;
+ justify-content: center;
+  border-radius: 1rem;
+  
+}
+.option1{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  background-color: green;
+  border-radius: 1rem;
+  
+}
+.option2{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  background-color: blue;
+  border-radius: 1rem;
+  
+}
+.option3{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  background-color: pink;
+  
+  border-radius: 1rem;
+  
+}
+.option:hover{
+  color: gray;
+  
+}
+ol{
+  position: relative;
+  padding: 0 1.5rem;
+  color: black;
+  
+  
+}
+span{
+  display: block;
+  padding: 0.1rem 0.7rem;
+  border-radius: 1rem;
+
+}
+#answer{
+  margin-top: 2.5rem;
+}
+#stat{
+  margin-top: 1.5rem;
+  color: rgb(114, 2, 71);
+}
+.buttons{
+  text-align: center;
+}
+button{
+  padding: 0.2rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.9rem;
+  border-radius: 1.5rem;
+  color:white;
+  background: orange;
+}
+button:active{
+  background: black;
+}
+#scoreboard,#answerBank{
+  width: 20rem;
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 5rem;
+  display: none;
+}
+#score-title{
+  margin: 1rem 0;
+}
+#score-btn,#check-answer{
+  margin-top: 1rem;
+}
+#score{
+  font-size: 2.5rem;
+}
+#answerBank li{
+  text-align: left;
+  margin-bottom: 0.2rem;
+  font-size: larger;
+}
+#answers{
+  margin-top: 1rem;
+}
+#option0{
+  color: white;
+  text-align: center;
+}
+#option1{
+  color: white;
+}
+#option2{
+  color: white;
+}
+#option3{
+  color: white;
+}

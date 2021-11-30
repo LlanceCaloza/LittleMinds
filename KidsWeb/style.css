@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Carter+One&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Carter+One&family=Dancing+Script&family=Fredoka+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Carter+One&family=Dancing+Script&family=Francois+One&family=Fredoka+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Arima+Madurai:wght@100&family=Carter+One&family=Dancing+Script&family=Francois+One&family=Fredoka+One&family=Pacifico&family=Roboto+Slab:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Arima+Madurai:wght@100&family=Carter+One&family=Concert+One&family=Dancing+Script&family=Francois+One&family=Fredoka+One&family=Pacifico&family=Roboto+Slab:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Arima+Madurai:wght@100&family=Carter+One&family=Concert+One&family=Dancing+Script&family=Francois+One&family=Fredoka+One&family=Judson&family=Pacifico&family=Roboto+Slab:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#homepage {
+    background-color:lightblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(../KidsWeb/image2/homepage/bghome.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: top center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    font-family: 'Fredoko One';
+    position: fixed;
+    background-color: rgba(140, 202, 243, 0.418);
+}
+
+nav p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(31, 8, 114);
+    font-size: 33px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Fredoka One';
+}
+
+nav ul {
+    float: left;
+    font-family: 'Roboto Slab';
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    font-family: 'Roboto Slab';
+}
+
+nav ul li a {
+    display: blocks;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    line-height: 55px;
+    padding: 22px 14px;
+    text-decoration: none;
+    font-family: 'Roboto Slab';
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(197, 249, 253);
+    padding: 10px;
+    border-radius:  15px 15px 15px 15px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    border-radius: 4px;
+}
+
+nav ul li ul li a{
+    padding: 8px 10px;
+    line-height: 35px;
+}
+
+nav ul li ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 15px 15px 15px;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding: 0 25px;
+    text-align: justify;
+}
+
+.column {
+    flex-basis: 50%;
+}
+h1 {
+    color: rgb(37, 13, 122);
+    font-size: 50px;
+    font-family: 'Fredoka One';
+    padding: 0 0 10px;
+}
+
+.column {
+    color: white;
+    font-size: 22px;
+    font-family: 'Judson';
+}
+
+button {
+    width: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(24, 120, 165);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+.object {
+    width: 150px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px 15px;
+    /*background-image: url(../KidsWeb/image2/black.jpg);*/
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    outline: rgb(109, 214, 221) solid;
+}  
+
+.column p {
+    color: rgb(0, 0, 0);
+}
+
+.object1 {
+    background-image: url(../KidsWeb/image2/homepage/alphbet.png);
+}
+.object1 a {
+    text-decoration: none;
+    color: black;
+    font-family:'Concert One';
+    font-size: 20px;
+}
+
+.object2 {
+    background-image: url(../KidsWeb/image2/homepage/numbers.png);
+}
+.object2 a {
+    text-decoration: none;
+    color: black;
+    font-family:'Concert One';
+    font-size: 20px;
+}
+
+.object3 {
+    background-image: url(../KidsWeb/image2/homepage/shapes.png);
+}
+
+
+.object4 {
+    background-image: url(../KidsWeb/image2/homepage/colors.png);
+}
+.object4 a {
+    text-decoration: none;
+    color: black;
+    font-family:'Concert One';
+    font-size: 20px;
+}
+
+.object a {
+    text-decoration: none;
+    color: black;
+    font-family:'Concert One';
+    font-size: 20px;
+}
+
+.object p {
+    font-family: 'Judson';
+    font-size: 19px;
+    text-align: center;
+}
+.object:hover {
+    transform: translateY(-10px);
+}
+
+/*End of Homepage*/
+
+/*Alphabet CSS*/
+#alphabetpage {
+    background-color: lightblue;
+    background-image: url(../KidsWeb/image2/alphabet-bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#alphabetpage h1 {
+    text-align: center;
+    padding: 35px;
+}
+
+.alphabet-image {
+    margin: 10px 50px;
+}
+
+.alphabet-image img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+    width: 100px;
+    height: 130px;
+}
+
+.alphabet-image img:hover {
+    filter: grayscale(50%);
+    transform: scale(1.1);
+}
+/*End of Alphabet*/
+
+/*Number CSS*/
+#numberpage {
+    background-color: rgb(122, 166, 231);
+    background-image: url(../KidsWeb/image2/number-bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+/*End of Number*/
+
+/*Shape CSS*/
+#shapepage {
+    background-color: lightblue;
+    background-image: url(../KidsWeb/image2/shapes-bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+/*End of Shape*/
+
+/*Color CSS*/
+
+#colorpage {
+    background-color: rgb(122, 166, 231);
+    background-image: url(../KidsWeb/image2/colors-bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#colorpage h1 {
+    text-align: center;
+}
+
+#colorpage .hi-slide {
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+}
+
+#colorpage .hi-slide .hi-next,
+.hi-slide .hi-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+    opacity: 1;
+    background-color:white;
+}
+
+.hi-slide .hi-prev { left: -60px; }
+
+.hi-slide .hi-prev::before {
+    content: '<';
+}
+
+.hi-slide .hi-next { right:-60px; }
+
+.hi-slide .hi-next::before {
+    content: '>';
+}
+
+.hi-slide  ul {
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide  ul  li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.hi-slide ul li img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+/*End of Color*/
+
+
+/*About CSS*/
+#aboutpage {
+    background-color: lightblue;
+    background-image: url(../KidsWeb/image2/about-bg.png );
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+/*End of About*/
+
+#contacts {
+    background-color: rgb(44, 125, 155);
+    background-image: url(../KidsWeb/image2/homebg.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+}

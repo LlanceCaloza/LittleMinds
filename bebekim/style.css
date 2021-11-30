@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    max-height: 1000px;
+    font-family: 'Poppins', sans-serif;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(2,2,2);
+}
+p {
+    font-size: 15px;
+    line-height: 12px;
+    text-align: justify;
+    background: url(../bebekim/bebeimg/bebe1.jpg);
+    background-attachment: center;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-attachment: center;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.116);
+}

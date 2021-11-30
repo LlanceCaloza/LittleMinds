@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Multiply</title>
+</head>
+
+<body>
+
+  <audio id="Audio">
+    <source src="wrong.mp3" type="audio/mp3">
+  </audio>
+  <audio id="Audio2">
+    <source src="correct.mp3" type="audio/mp3">
+  </audio>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <h2><span><i class="fa fa-trophy" aria-hidden="true"></i></span> MATH FoR Kidz</h2>
+        <nav>
+          <ul>
+            <li><a href="index.htm">Add</a></li>
+            <li><a href="subtract.htm">Subtract</a></li>
+            <li class="current"><a href="multiply.htm">Multiply</a></li>
+            <li><a href="divide.htm">Divide</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="lay">
+    <div class="equation">
+      <h1 id="num1" style="color:#000080"></h1>
+      <h1 style="color: #2AB7CA">*</h1>
+      <h1 id="num2" style="color: #FED766">1</h1>
+      <h1 style="color: #F86624">=</h1>
+      <h1 style="color: red">?</h1>
+    </div>
+    <div class="answer-options">
+      <div class="options" style="background-color: red;">
+        <h1 id="option1">1</h1>
+      </div>
+      <div class="options" style="background-color: green;">
+        <h1 id="option2">2</h1>
+      </div>
+      <div class="options" style="background-color: blue;">
+        <h1 id="option3">3</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="multiply.js"></script>
+</body>
+
+</html>
